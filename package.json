@@ -1,11 +1,13 @@
 {
   "name": "bechdeltest-client",
   "version": "0.1.0",
-  "author": "Maria Clara Santana <claarasantana@gmail.com>", 
+  "author": "Maria Clara Santana <claarasantana@gmail.com>",
   "private": true,
   "dependencies": {
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "redux": "^3.6.0"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"
