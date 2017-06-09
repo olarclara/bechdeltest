@@ -1,8 +1,9 @@
 import React from 'react'
+import Search from './components/Search'
 
 const App = () => (
   <div className="App">
-    hello, world.
+    <Search />
   </div>
 )
 
