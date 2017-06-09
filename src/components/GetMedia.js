@@ -12,11 +12,13 @@ class GetMedia extends Component {
   }
   static propTypes = { title: PropTypes.string.isRequired }
   handleSearch(e) {
-    const title = this.props.title.replace(/ /g, '+')
-    fetch('http://bechdeltest.com/api/v1/getMoviesByTitle?title=' + title)
-      .then(res => res.json())
-      .then(data => this.props.setMedia(data))
-      .catch(err => console.error(err))
+    if (this.props.title !== '') {
+      const title = this.props.title.replace(/ /g, '+')
+      fetch('http://bechdeltest.com/api/v1/getMoviesByTitle?title=' + title)
+        .then(res => res.json())
+        .then(data => this.props.setMedia(data))
+        .catch(err => console.error(err))    
+    }
   }
 
   render() {
