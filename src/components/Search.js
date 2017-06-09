@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import GetMedia from './GetMedia'
+import ViewMedia from './ViewMedia'
 import './Search.css'
 
 class Search extends Component {
@@ -16,6 +17,7 @@ class Search extends Component {
         <input type="text" id="title" value={this.state.title} onChange={this.handleInput}
           placeholder="Search movies by their title..." />
         <GetMedia title={this.state.title} />  
+        <ViewMedia />
       </div>
     )
   }
