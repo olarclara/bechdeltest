@@ -1,6 +1,5 @@
 .Search {
-  height: 100vh;
-  width: 50%;
+  min-height: 65vh;
   background: url('../assets/search-bg.jpg');
   background-size: cover;
   padding: 1em;
