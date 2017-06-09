@@ -1,1 +1,0 @@
-export const setMedia = media => ({ type: 'SET_MEDIA', media })
